@@ -173,7 +173,7 @@ and (max-device-width : 480px) {
     }
     .welcome h1{
         margin-bottom: 10px;
-        font-size: 13px;
+        font-size: 11px;
     }
     .welcome p{
         font-size: 6px;
