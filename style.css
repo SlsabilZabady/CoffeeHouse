@@ -161,10 +161,12 @@ footer .footer-right{
 }
 /* Smartphones(S7|) (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 360px)
- and (max-device-width : 640px){
+and (min-device-width : 360px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (min-resolution: 192dpi)
+and (max-device-width : 640px){
     .logo img{
-        top: 8%;
+        top: 5%;
         width: 100px;
         height: 75px;
         left: 10%;      
