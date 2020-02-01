@@ -173,7 +173,7 @@ and (max-device-width : 480px) {
     }
     .welcome h1{
         margin-bottom: 10px;
-        font-size: 11px;
+        font-size: 10px;
     }
     .welcome p{
         font-size: 6px;
@@ -197,6 +197,9 @@ and (max-device-width : 480px) {
         width: 90px;
         height: 33;
         font-size: 7px;
+    }
+    .col-md-3 .card{
+        margin: auto;
     }
 }
 
