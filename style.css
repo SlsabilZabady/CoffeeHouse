@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
 *{
     padding: 0;
     margin: 0;
+}
+.navbar-brand{
+    color: saddlebrown;
+    font-family: 'Sigmar One', cursive;
 }
 .nav-item{
     color: #BF8555;
@@ -27,7 +32,7 @@
     color: #191310;
     border-bottom:2px solid #191310;
 }
-.navbar-collapse{
+.navbar{
     background: rgba(255, 255, 255, 0.5)
 }
 .Banner img{
@@ -50,39 +55,44 @@
 .welcome {
     position: absolute;
     overflow: hidden;
-    top: 40%;
-    padding: 40px;
-    margin-top: 40px;
+    top: 15vw;
+text-align: center;
 }
 .welcome h1{
-    margin-bottom: 40px;
+    margin-bottom: 3vw;
     color: #703A0F;
+    font-size: 3.75vw;
 }
 .welcome p{
     color: #BF8555;
+    font-size: 1.75vw;
+    padding-top: 2vw;
 }
 .welcome span{
-    display: block;
+    
     text-align: right;
-    margin-top: 10px;
-    font-size: 10px;
+    font-size: 1vw;
 }
 .order{
     position: absolute;
     overflow: hidden;
-    top: 70%;
-    padding: 40px;
-    margin-top: 40px;
+    top: 30vw;
+    margin-top: 2vw;
+    margin-left: 6vw;
     text-align: center;
-    margin-left: 9%;
     color:  #703A0F;
 }
+.order p{
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
 .order button{
-    padding: 10px 20px;
+    padding: 1vw 3vw;
     border-radius: 20px;
     border: 2px solid #703A0F;
     color: #703A0F ;
     background: none;
+    font-size: 1vw;
 }
 .order button:hover{
     color: white ;
@@ -159,102 +169,3 @@ footer .footer-right{
     left: 0;
     text-align: center;
 }
-/* Smartphones(S7|) (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 360px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (min-resolution: 192dpi)
-and (max-device-width : 640px){
-    .logo img{
-        top: 5%;
-        width: 100px;
-        height: 75px;
-        left: 10%;      
-    }
-    .welcome {
-        top: 12%;
-        padding: 25px;
-        margin-top: 5px;
-    }
-    .welcome h1{
-        margin-bottom: 15px;
-        margin-top: 15px;
-        font-size: 12px;
-    }
-    .welcome p{
-        font-size: 6px;
-        padding-right: 40px;
-    }
-    .welcome span{
-        margin-top: 5px;
-        font-size: 5px;
-        padding-right: 5px;
-    }
-    .order{
-        top: 18%;
-        padding: 20px;
-        margin-top: 50px;
-        margin-left:5%;
-        font-size: 8px;
-    }
-    .order button{
-        padding: 5px 20px;
-        border-radius: 20px;
-        width: 90px;
-        height: 33;
-        font-size: 7px;
-    }
-    .col-md-3 .card{
-        margin-left: 10%;
-    }
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-    .logo img{
-        top: 8%;
-        width: 170;
-        height: 150px;
-        left: 4%;      
-    }
-    .welcome {
-        top: 20%;
-        padding: 25px;
-        left: 4%;
-    }
-    .welcome h1{
-        margin-bottom: 35px;
-        margin-top: 15px;
-        font-size: 30px;
-    }
-    .welcome p{
-        font-size: 12px;
-        padding-right: 40px;
-    }
-    .welcome span{
-        margin-top: 5px;
-        font-size: 10px;
-        padding-right: 5px;
-    }
-    .order{
-        top: 35%;
-        padding: 20px;
-        margin-top: 60px;
-        margin-left:3%;
-        font-size: 18px;
-        text-align: center;
-    }
-    .order button{
-        padding: 5px 20px;
-        border-radius: 20px;
-        width: 100px;
-        height: 33;
-        font-size: 10px;
-    }
-    .col-md-3 .card{
-        margin-left: 10%;
-    }
-}
-
-
