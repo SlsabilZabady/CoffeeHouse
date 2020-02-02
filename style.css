@@ -46,20 +46,20 @@
 }
 .logo img{
     position: absolute;
-    top: 10%;
-    width: 325px;
-    height: 300px;
-    margin-left: 9%;
+    top: 6vw;
+    width: 15vw;
+    height: 15vw;
+    margin-left: 15vw;
     bottom: 3%;
 }
 .welcome {
     position: absolute;
     overflow: hidden;
-    top: 15vw;
+    top: 20vw;
 text-align: center;
 }
 .welcome h1{
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     color: #703A0F;
     font-size: 3.75vw;
 }
@@ -76,9 +76,9 @@ text-align: center;
 .order{
     position: absolute;
     overflow: hidden;
-    top: 30vw;
-    margin-top: 2vw;
-    margin-left: 6vw;
+    top: 35vw;
+    margin-top: 3vw;
+    margin-left: 8vw;
     text-align: center;
     color:  #703A0F;
 }
