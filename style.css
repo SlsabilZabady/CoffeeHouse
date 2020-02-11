@@ -7,6 +7,12 @@
     color: saddlebrown;
     font-family: 'Sigmar One', cursive;
 }
+.navbar-brand:hover{
+    color: saddlebrown;
+}
+.fa{
+    margin-right: 10px;
+}
 .nav-item{
     color: #BF8555;
     margin: 0 10px;
@@ -86,7 +92,7 @@ text-align: center;
     font-size: 2vw;
     margin-bottom: 1vw;
 }
-.order button{
+.order a{
     padding: 1vw 3vw;
     border-radius: 20px;
     border: 2px solid #703A0F;
@@ -94,9 +100,10 @@ text-align: center;
     background: none;
     font-size: 1.5vw;
 }
-.order button:hover{
+.order a:hover{
     color: white ;
     background: #703A0F;
+    text-decoration: none;
 }
 .menu{
  background: #BF8555; 
