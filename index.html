@@ -10,22 +10,25 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/8bea9e22aa.js" crossorigin="anonymous"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Coffee House</title>
 </head>
 <body>
-    <div class="container">
+  <div id="website">
+    <div class="container" >
         <nav class="navbar navbar-expand-lg navbar-inverse fixed-top">
-          <a class="navbar-brand" href="#">Coffee House</a>
+          <!--<a class="navbar-brand" href="#">Coffee House</a>-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto text-right">
-                <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="account.html">Account</a>
-                <a class="nav-item nav-link" href="shopcart.html">Shopping Cart</a>
+                <a class="nav-item nav-link active" href="#"><i class="fa fa-home"></i>Home</a>
+                <a class="nav-item nav-link" href="account.html"><i class="fa fa-user"></i>Account</a>
+                <a class="nav-item nav-link cart" href="shopcart.html" @click="isShowingCart = true">
+                  <i class="fa fa-shopping-cart "></i>Shopping Cart <span {{ cart.items.length }} ><template v-if="cart.items.length == 1"></template>
+                    <template v-else></template></span></a>
                 <a class="nav-item nav-link" href="logIn.html" target="_blank">Log In</a>
                 <a class="nav-item nav-link button" href="signup.html" target="_blank">Sign Up</a>
               </div>
@@ -54,10 +57,12 @@
         
                 <div class="order">
                     <p>You Need   a Coffee .. Just Order it</p>
-                    <button type="button">Order Now</button>
+                    
+                    <a type="submit"  href="signup.html" target="_blank">Order Now</a>
+                  
                 </div>
             </div>
-        
+    <main>    
     <div class="menu">
         <h2><span>Coffee</span> Menu</h2>
         <div>
@@ -69,58 +74,58 @@
                             <div class="card-body">
                               <h5 class="card-title">Flat White</h5><h6>$10.00</h6>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                              <a  class="btn btn-primary add-cart" @click="addProductToCart(this)">Add to Cart</a>  <a href="itemorder.html" target="_blank" class="btn btn-primary ">view</a>
                             </div>
                           </div>
                     </div>
                     <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="pngguru.com.png" class="card-img-top" alt="...">
+                        <img src="blackcoffee.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Black Coffee</h5><h6>$10.00</h6>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Add to Cart</a> 
+                          <a  class="btn btn-primary add-cart">Add to Cart</a>  <a  class="btn btn-primary ">view</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
-                            <img src="affogato-png-6.png" class="card-img-top" alt="...">
+                            <img src="affogato.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Affogato</h5><h6>$10.00</h6>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                              <a  class="btn btn-primary add-cart">Add to Cart</a>  <a  class="btn btn-primary ">view</a>
                             </div>
                           </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
-                            <img src="csm_coffeecup_a44c874bd4.png" style="height: 170PX; margin-top: 30px;" class="card-img-top" alt="...">
+                            <img src="veinna.png" style="height: 170PX; margin-top: 30px;" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Veinna</h5> <h6>$10.00</h6>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                              <a  class="btn btn-primary add-cart">Add to Cart</a>  <a  class="btn btn-primary ">view</a>
                             </div>
                           </div>
                     </div>
                     
                     <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
-                            <img src="7663ec0b82a4281b9c88b2a544bd445b.png" class="card-img-top" alt="...">
+                            <img src="cappuccino.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Cappuccino</h5><h6>$10.00</h6>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                              <a  class="btn btn-primary add-cart">Add to Cart</a>  <a  class="btn btn-primary ">view</a>
                             </div>
                           </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card" style="width: 18rem;">
-                            <img src="FAVPNG_coffee-cup-tea-cafe-iced-coffee_3zYFZj1j.png" class="card-img-top" alt="...">
+                            <img src="milkcoffee.png" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">Milk Coffee</h5><h6>$10.00</h6>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Add to Cart</a>
+                              <a  class="btn btn-primary add-cart">Add to Cart</a>  <a  class="btn btn-primary ">view</a>
                             </div>
                           </div>
                     </div>
@@ -129,14 +134,17 @@
               </div>
         </div>
     </div>
+  </main>
     <footer>
         <div class="footer-cotant">
         </div>
         <div class="footer-right">
             &copy;CoffeeHouse. All Right Reserved.
         </div>
-
+<!--<input type="number" class="input">-->
     </footer>
-    
+  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
